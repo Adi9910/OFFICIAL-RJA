@@ -1,0 +1,49 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  --bg-color: #f0f0f0;
+  --bg-color-secondary: #dddcdc;
+  --bg-color-light: #b7b7b7;
+  --text-color: rgba(39, 39, 39, 0.87);
+  --text-color-secondary: rgba(71, 71, 71, 0.6);
+  --text-color-disabled: rgba(66, 66, 66, 0.38);
+  --divider-color: rgba(255, 255, 255, 0.12);
+
+  /* Peacock Green Shades (Light Theme) */
+  --peacock-green-lightest: #a7ffeb;
+  --peacock-green-light: #26ffe6;
+  --peacock-green: #009688;
+  --peacock-green-dark: #00695c;
+
+  /* Classic Black Shades (Light Theme) */
+  --black-lightest: #e0e0e0;
+  --black-light: #bdbdbd;
+  --black: #212121;
+  --black-dark: #000000;
+  margin: 0;
+  padding: 0;
+}
+
+[theme="dark"] {
+  --bg-color: #242424;
+  --bg-color-secondary: #1c1c1c;
+  --bg-color-light: #2c2c2c;
+  --text-color: rgba(255, 255, 255, 0.87);
+  --text-color-secondary: rgba(255, 255, 255, 0.6);
+  --text-color-disabled: rgba(255, 255, 255, 0.38);
+  --divider-color: rgba(255, 255, 255, 0.12);
+
+  /* Peacock Green Shades (Dark Theme) */
+  --peacock-green-lightest: #64ffda;
+  --peacock-green-light: #1de9b6;
+  --peacock-green: #00bfae;
+  --peacock-green-dark: #00796b;
+
+  /* Classic Black Shades (Dark Theme) */
+  --black-lightest: #757575;
+  --black-light: #424242;
+  --black: #181818;
+  --black-dark: #000000;
+}
