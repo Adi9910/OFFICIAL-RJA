@@ -55,7 +55,7 @@ export default function Header() {
       </List>
       <Divider />
       <List>
-        {auth === "success"
+        {auth !== "fail" && auth
           ? profile.map((item, index) => (
               <ListItem key={item.text} disablePadding>
                 <ListItemButton to={item.link}>

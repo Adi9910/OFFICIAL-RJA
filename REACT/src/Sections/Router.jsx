@@ -23,10 +23,10 @@ const AppRouter = () => {
         {/* Main pages */}
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About/>} />
-        <Route path="/dashboard" element={ auth !== "success"  ? <Login /> : <Dashboard/>} />
+        <Route path="/dashboard" element={ auth === "fail"  ? <Login /> : <Dashboard/>} />
 
         {/* auth related */}
-        <Route path="/profile" element={ auth !== "success"  ? <Login /> : <Profile />} /> 
+        <Route path="/profile" element={ auth === "fail"  ? <Login /> : <Profile />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
 

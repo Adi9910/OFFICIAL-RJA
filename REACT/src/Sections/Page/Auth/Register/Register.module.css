@@ -1,0 +1,12 @@
+.paper{
+    background-color: var(--bg-color-secondary);
+    color: var(--text-color);
+    padding: 20px;
+}
+.fieldBox{
+    padding: 5px;
+}
+.field{
+    color: var(--text-color);
+    margin: -5px;
+}

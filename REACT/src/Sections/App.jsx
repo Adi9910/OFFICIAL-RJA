@@ -5,6 +5,7 @@ import { Box, Button } from "@mui/material";
 
 import AppRouter from "./Router.jsx";
 import Header from "./Component/Header/Header.jsx";
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   const toggle = () => {
@@ -20,14 +21,16 @@ function App() {
       <AppProvider>
         <Header />
 
-        <Button variant="contained" onClick={toggle}>
+       <Button variant="contained" onClick={toggle}>
           TOGGLE
         </Button>
+         {/* <Box className={sty.textColor}>{"hello "+import.meta.env.VITE_APP_URL}</Box> */}
 
         <AppRouter />
 
-        <Box className={sty.textColor}>{"hello "+import.meta.env.VITE_APP_URL}</Box>
       </AppProvider>
+      <ToastContainer position="top-right" autoClose={5000} />
+
     </Box>
   );
 }

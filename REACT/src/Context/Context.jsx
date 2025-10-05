@@ -3,7 +3,7 @@ import {createContext, useState} from "react";
 export const AppContext = createContext();
 
 export const AppProvider = ({children}) => {
-    const [auth, setAuth] = useState("fail");
+    const [auth, setAuth] = useState(localStorage.getItem("account_id") || "fail");
 
     const value = {
         auth,

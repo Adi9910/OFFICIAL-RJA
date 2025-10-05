@@ -13,7 +13,7 @@ const getData = (url) => {
   });
 };
 
-const postData = (url, data) => {
+const postData = async(url, data) => {
   return new Promise(async (resolve) => {
     try {
       const response = await axios.post(API_BASE_URL + url, data, {
